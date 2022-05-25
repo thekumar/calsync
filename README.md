@@ -1,7 +1,11 @@
 # calsync
 GSuite Calendar Syncing, a hacky way to go about getting your Gsuite Work Calendar on your WearOS device if your organization doesn't allow sharing calendar with your personal profile.
 
-## Steps
+## Why?
+Because WearOS sucks and has no support for syncing with your Android phone's work profile :(
+
+
+### Steps
 * Create a new calendar in your personal account, and share it with your work account with write permissions.
 * Run this script in your work account's GScripts (scripts.google.com) to sync your work calendar with the shared personal calendar.
   * Install the script, i.e, copy/paste/save as a new .gs script.
@@ -11,5 +15,5 @@ GSuite Calendar Syncing, a hacky way to go about getting your Gsuite Work Calend
     * Also, make sure to update the calendar ID on top of the script with your newly minted personal calendar ID
   * Now, schedule the function `syncCalendars()` to run at the frequency with which you want the calendars to stay in sync.
 
-## TODO / Eventual Improvements
+### TODO / Eventual Improvements
 * Automagically generate spreadsheet if one doesn't exist and automagically search for your shared personal calendar.
